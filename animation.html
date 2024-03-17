@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Animated Background</title>
+  </head>
+<body>
+  <div class="animated-background">
+    <div class="gradient-bg"></div>
+    <div class="movie-pattern"></div>
+    <div class="mouse"></div>
+  </div>
+  <div class="content">
+    <!-- Your content here -->
+    <h1>Welcome to Animated Background</h1>
+    <p>This is a simple example of an animated background with subtle animation for web pages.</p>
+  </div>
+
+  <script>
+    document.addEventListener('mousemove', function(e) {
+      const mouse = document.querySelector('.mouse');
+      mouse.style.left = e.pageX + 'px';
+      mouse.style.top = e.pageY + 'px';
+    });
+  </script>
+</body>
+</html>
